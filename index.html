@@ -1,12 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<script src="assets/js/script.js" defer></script>
+	<title>decodificador</title>
 </head>
+
 <body>
-    <h1> Ola mundo </h1>
+
+	<div id="wrapper">
+		<header>
+			<img src="assets/img/logo.svg" width="20" height="20" alt="">
+		</header>
+		<main>
+			<div class="container-input-btn">
+				<div class="container-input">
+					<textarea id="input-text" placeholder="Digite seu texto"></textarea>
+					<p>ATENÇÃO: só aceitamos letras minúsculas e sem acento.</p>
+				</div>
+				<div class="container-btn">
+					<button onclick="criptografar()" class="btn-crip">Criptografar</button>
+					<button onclick="descriptografar()" class="btn-descrip">Descriptografar</button>
+				</div>
+			</div>
+			<div class="container-output">
+				<img id="image" src="https://img.myloview.com.br/quadros/search-icon-vector-700-187605366.jpg" alt="">
+				<p>Nenhuma mensagem encontrada</p>
+				<p id="paragrafo">Digite um texto que deseja criptografar ou descriptografar.</p>
+			</div>
+		</main>
+	
+		<footer>
+			<img src="./assets/img/logo-github.svg" width="20" height="20" alt="logo github">
+			<h3>Github <a href="https://github.com/DaniloFocus" target="_blank">@danilofocus</a></h3>
+		</footer>
+	</div>
+
 </body>
+
 </html>
